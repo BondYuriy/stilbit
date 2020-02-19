@@ -1,0 +1,35 @@
+.list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+
+  & .list-grid-item {
+    flex: 0 0 29%;
+    margin-bottom: 45px;
+    margin-right: 3%;
+
+    & .item-img-box {
+      display: block;
+
+      & .container-wh {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+
+        & .container-vw {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+
+          & .display {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

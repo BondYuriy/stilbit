@@ -1,0 +1,47 @@
+.dropdown {
+  & .btn {
+    padding: 0;
+    border: 0 !important;
+    background: 0 !important;
+    color: $black !important;
+    font-family: $Exo !important;
+    font-size: $font-text !important;
+    font-weight: $Regular !important;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      border: 0;
+      background-image: url('../images/Rectangle_3_copy.svg');
+      background-position: center;
+      background-size: cover;
+      width: 11px;
+      height: 8px;
+      margin-left: 9px;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none !important;
+    }
+  }
+
+  & .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+
+    & .dropdown-item {
+      color: $black !important;
+      font-family: $Exo !important;
+      font-size: $font-text !important;
+      font-weight: $Regular !important;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $yellow-color;
+      }
+    }
+  }
+}

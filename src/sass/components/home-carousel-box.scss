@@ -1,0 +1,21 @@
+.home-carousel-box {
+  max-width: 1390px;
+  height: 550px;
+  overflow: hidden;
+  margin: 0 auto 140px auto;
+}
+
+.home-carousel {
+  & .item {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

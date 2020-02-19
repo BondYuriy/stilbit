@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* :not(svg) {
+  transition: 0.5s;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  font-family: $MyriadPro;
+  font-weight: $Regular;
+  font-size: $font-text;
+  color: $text-color;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+main {
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.sub-page {
+  padding: 0 5.56% 60px 5.56%;
+}
+
+input,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.category-title {
+  margin: 0;
+  color: $yellow-color;
+  font-family: $Exo;
+  font-size: $font-category;
+  font-weight: $light;
+  text-transform: uppercase;
+  line-height: 40px;
+}
