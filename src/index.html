@@ -67,6 +67,16 @@
       </div>
     </header>
     <main>
+      <div class="home-info-mobile">
+        <div class="section-title-box">
+          <h4 class="subtitle">БЕРЕМ ВСЕ СЛОЖНОСТИ РЕМОНТА НА СЕБЯ</h4>
+          <h2 class="section-title">РЕМОНТ БОЛЬШЕ НЕ ПОДВИГ</h2>
+        </div>
+        <a class="btn btn-beige" href="#">Рассчитать стоимость</a>
+        <p>
+          Или напишите нам <br />в <a class="link-text" href="#">WhatsApp</a>
+        </p>
+      </div>
       <div class="home-carousel-box">
         <div class="owl-carousel home-carousel owl-theme">
           <div class="item">
@@ -76,6 +86,9 @@
             <img src="images/Слой_43.jpg" alt="photo" />
           </div>
         </div>
+      </div>
+      <div class="btn-link-mobile-box">
+        <a class="btn-link-mobile" href="#">Смотреть все работы</a>
       </div>
       <div class="container">
         <div class="row">
@@ -363,8 +376,14 @@
                       течение 15 минут.
                     </p>
                     <form>
-                      <input type="text" placeholder="Имя" />
-                      <input type="email" placeholder="Email" />
+                      <div class="form-item">
+                        <input type="text" id="name" />
+                        <label for="name">Имя</label>
+                      </div>
+                      <div class="form-item">
+                        <input type="email" id="email" />
+                        <label for="email">Email</label>
+                      </div>
                       <input type="button" value="Отправить" />
                     </form>
                   </div>

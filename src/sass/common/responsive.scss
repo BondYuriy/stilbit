@@ -1,8 +1,9 @@
 /* base */
 
 @media (max-width: 1023px) {
-  .main {
+  main {
     padding: 0;
+    padding-top: 60px;
   }
 
   .sub-page {
@@ -285,10 +286,45 @@
 }
 
 /* section-title */
+@media (max-width: 575px) {
+  .home-carousel-box {
+    height: 125px;
+    margin: 0 auto 15px auto;
+  }
+
+  .home-carousel {
+    & .item {
+      height: 125px;
+    }
+  }
+}
+
+/* section-title */
 
 @media (max-width: 575px) {
   .section-title {
     font-size: 18px;
     letter-spacing: 9px;
+  }
+}
+
+/* section-title-box */
+@media (max-width: 575px) {
+  .section-title-box {
+    & .subtitle {
+      font-size: 12px;
+    }
+  }
+}
+
+/* home-page */
+
+@media (max-width: 575px) {
+  .home-info-mobile {
+    display: block;
+  }
+
+  .btn-link-mobile-box .btn-link-mobile {
+    display: inline-block;
   }
 }
