@@ -285,7 +285,16 @@
   }
 }
 
+/* breadcrumb-box */
+
+@media (max-width: 767px) {
+  .breadcrumb-box {
+    display: none;
+  }
+}
+
 /* card */
+
 @media (max-width: 991px) {
   .card .card-img {
     height: auto;
@@ -374,6 +383,7 @@
 }
 
 /* section-title-box */
+
 @media (max-width: 767px) {
   .section-title-box {
     & .subtitle {
@@ -523,6 +533,147 @@
   .video {
     & iframe {
       height: auto;
+    }
+  }
+}
+
+/* portfolio-inside */
+
+@media (max-width: 991px) {
+  .portfolio-inside-gallery {
+    display: block;
+
+    & .item {
+      margin-bottom: 11px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    & .box-1,
+    .box-2,
+    .box-3,
+    .box-4,
+    .box-5,
+    .box-6,
+    .box-7,
+    .box-8,
+    .box-9 {
+      height: auto;
+    }
+  }
+
+  .portfolio-inside-information-box ul {
+    display: block;
+
+    & li {
+      margin-right: 0;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & .name {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .next-project {
+    & .next-project-list {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-inside-img {
+    height: 492px;
+    margin-bottom: 20px;
+
+    & img {
+      display: block;
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .portfolio-inside-description {
+    padding-bottom: 50px;
+
+    & .portfolio-inside-list {
+      max-height: 222px;
+      overflow: hidden;
+
+      & li {
+        display: block;
+
+        & .title {
+          font-size: 18px;
+          text-transform: capitalize;
+          margin-bottom: 10px;
+        }
+
+        & .text {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .show-list-text {
+      max-height: 10000px;
+    }
+
+    & .btn-toggle-mobile {
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+
+  .portfolio-inside-information-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 40px 0;
+
+    & ul li {
+      & .name {
+        font-size: 10px;
+        letter-spacing: 4.07px;
+        margin-bottom: 5px;
+      }
+
+      & .value-box {
+        display: flex;
+      }
+
+      & .value {
+        font-size: 10px;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    & .link {
+      color: #898989;
+      font-size: 10px;
+    }
+  }
+
+  .next-project {
+    padding: 40px 0 70px 0;
+
+    & .title {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    & .next-project-list {
+      padding-top: 15px;
     }
   }
 }

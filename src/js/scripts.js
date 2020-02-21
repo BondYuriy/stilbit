@@ -34,6 +34,10 @@ $(document).ready(function() {
       },
     },
   });
+
+  $('.btn-toggle-mobile').click(function() {
+    $('.portfolio-inside-list').toggleClass('show-list-text');
+  });
 });
 
 new WOW().init();
