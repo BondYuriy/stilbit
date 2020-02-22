@@ -71,3 +71,17 @@
 .navbar-collapse.collapse.show {
   transition: 0s !important;
 }
+
+.black-theme {
+  background-color: rgba(29, 29, 29, 1);
+
+  & .navbar .navbar-nav li {
+    &:last-child a {
+      border: 1px solid $white;
+    }
+
+    & a {
+      color: $white;
+    }
+  }
+}
