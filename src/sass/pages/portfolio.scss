@@ -15,6 +15,10 @@
     font-weight: 300;
     text-decoration: underline;
     text-align: center;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -175,6 +179,16 @@
         font-size: 22px;
         font-weight: 700;
         margin-bottom: 30px;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        & a {
+          color: #efefef;
+          // font-size: 22px;
+          // font-weight: 700;
+        }
       }
 
       & .subtitle {
@@ -192,6 +206,10 @@
         text-decoration: underline;
         position: absolute;
         bottom: 50px;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
