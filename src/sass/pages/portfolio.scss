@@ -36,14 +36,12 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid $white;
+      flex-wrap: wrap;
 
       & li {
-        border-right: 1px solid $white;
-
-        &:last-child {
-          border-right: 0;
-        }
+        border: 1px solid $white;
+        margin-left: -1px;
+        margin-top: -1px;
 
         & a {
           display: block;
@@ -87,6 +85,7 @@
             height: 415px;
 
             & iframe {
+              display: block;
               width: 100%;
               height: 100%;
             }
@@ -101,7 +100,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            z-index: 10000;
+            z-index: 5;
 
             & span {
               display: none;
@@ -171,7 +170,7 @@
       color: #efefef;
       font-size: 16px;
       font-weight: 300;
-      padding: 50px 0 100px;
+      padding: 50px 0 100px 0;
       position: relative;
 
       & .title {
@@ -186,8 +185,6 @@
 
         & a {
           color: #efefef;
-          // font-size: 22px;
-          // font-weight: 700;
         }
       }
 
@@ -211,6 +208,10 @@
           opacity: 0.5;
         }
       }
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
     }
   }
 }
